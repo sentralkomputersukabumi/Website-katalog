@@ -1,0 +1,19 @@
+// JavaScript to filter products based on type and brand
+function filterProducts() {
+    const productType = document.getElementById("product-type").value;
+    const productBrand = document.getElementById("product-brand").value;
+    const products = document.querySelectorAll(".product");
+
+    products.forEach(product => {
+        const type = product.getAttribute("data-type");
+        const brand = product.getAttribute("data-brand");
+
+        // Tampilkan produk jika sesuai dengan filter, sembunyikan jika tidak
+        if ((productType === "all" || productType === type) && 
+            (productBrand === "all" || productBrand === brand)) {
+            product.style.display = "block"; // Tampilkan produk
+        } else {
+            product.style.display = "none"; // Sembunyikan produk
+        }
+    });
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/sentalkomputer.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentral Komputer Sukabumi</title>
+    
+<link rel="stylesheet" href="./Sentral Komputer Sukabumi_files/style.css"></head>
+<body>
+    <header>
+        <div class="hero-banner">
+            <h1>Diskon Spesial Laptop Bulan Ini!</h1>
+            <p>Layanan Service Terpercaya untuk Semua Jenis Laptop</p>
+            <a href="http://127.0.0.1:5500/sentalkomputer.html#shop" class="btn">Belanja Sekarang</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/sentalkomputer.html#service">Layanan</a></li>
+            <li><a href="http://127.0.0.1:5500/sentalkomputer.html#about">Tentang Kami</a></li>
+            <li><a href="http://127.0.0.1:5500/sentalkomputer.html#contact">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- Select Product Section -->
+    <section id="shop">
+        <h2>Pilih Produk</h2>
+        <div class="filter-container">
+            <select id="product-type" onchange="filterProducts()">
+                <option value="all">Semua Produk</option>
+                <option value="laptops">Laptop</option>
+                <option value="accessories">Aksesoris</option>
+            </select>
+            <select id="product-brand" onchange="filterProducts()">
+                <option value="all">Semua Merek</option>
+                <option value="acer">Acer</option>
+                <option value="lenovo">Lenovo</option>
+                <option value="asus">Asus</option>
+                <option value="msi">MSI</option>
+                <option value="zyrex">Zyrex</option>
+                <option value="logitech">Logitech</option>
+                <option value="fantech">Fantech</option>
+                <option value="rexus">Rexus</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="new-products">
+        <h2>Produk Terbaru</h2>
+        <div class="product-grid">
+            <!-- Contoh Produk Laptop -->
+            <div class="product" data-type="laptops" data-brand="acer">
+                <img src="./Sentral Komputer Sukabumi_files/acer.png" alt="Acer Laptop">
+                <h3>Acer Aspire 5</h3>
+                <p>Rp 5.000.000</p>
+                <a href="http://127.0.0.1:5500/sentalkomputer.html#" class="btn">Beli Sekarang</a>
+            </div>
+            <div class="product" data-type="laptops" data-brand="lenovo">
+                <img src="./Sentral Komputer Sukabumi_files/lenovo1.png" alt="Lenovo Laptop">
+                <h3>Lenovo ThinkPad X1</h3>
+                <p>Rp 6.000.000</p>
+                <a href="http://127.0.0.1:5500/sentalkomputer.html#" class="btn">Beli Sekarang</a>
+            </div>
+            <!-- Contoh Produk Aksesoris -->
+            <div class="product" data-type="accessories" data-brand="logitech">
+                <img src="./Sentral Komputer Sukabumi_files/product3.jpg" alt="Logitech Mouse">
+                <h3>Logitech Wireless Mouse</h3>
+                <p>Rp 300.000</p>
+                <a href="http://127.0.0.1:5500/sentalkomputer.html#" class="btn">Beli Sekarang</a>
+            </div>
+            <div class="product" data-type="accessories" data-brand="fantech">
+                <img src="./Sentral Komputer Sukabumi_files/product4.jpg" alt="Fantech Keyboard">
+                <h3>Fantech Gaming Keyboard</h3>
+                <p>Rp 400.000</p>
+                <a href="http://127.0.0.1:5500/sentalkomputer.html#" class="btn">Beli Sekarang</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial">
+            <p>"Pelayanan sangat memuaskan, laptop saya kembali seperti baru!" - John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"Harga terjangkau dengan kualitas produk yang luar biasa." - Jane Smith</p>
+        </div>
+    </section>
+
+    <section id="contact-location">
+        <h2>Contact &amp; Lokasi</h2>
+        <p>Alamat: Jl. Sukabumi No. 123, Sukabumi</p>
+        <p>Telepon: (022) 123-4567</p>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Sentral Komputer Sukabumi</p>
+    </footer>
+
+    <script src="./Sentral Komputer Sukabumi_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

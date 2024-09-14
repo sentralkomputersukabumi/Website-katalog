@@ -1,0 +1,127 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar li a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar li a i {
+    margin-right: 10px;
+}
+
+/* Main Content Styles */
+.main {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+main label {
+    margin-bottom: 5px;
+}
+
+main input, main textarea, main select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #45a049;
+}
+
+main a button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main a button:hover {
+    background-color: #d32f2f;
+}
